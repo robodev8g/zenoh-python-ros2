@@ -24,3 +24,12 @@ robot(terminal1):
 home(terminal2):
 
 `python home_side/subscriber.py`
+
+### senario3: service request (home -> robot) and response (home <- robot)
+robot(terminal1):
+
+`ROS_LOCALHOST_ONLY=1 ROS_DOMAIN_ID=2 RMW_IMPLEMENTATION=rmw_cyclonedds_cpp ros2 run robot_side math_server`
+
+home(terminal2):
+
+`python home_side/call_service.py`
