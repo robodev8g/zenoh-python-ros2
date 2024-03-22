@@ -1,5 +1,13 @@
 # zenoh-python-ros2
 
+## installations
+cyclonedds_rmw:
+
+`sudo apt install ros-humble-rmw-cyclonedds-cpp`
+
+zenoh bridge:
+
+`sudo apt install zenoh-bridge-ros2dds`
 
 ## run zenoh bridge
 zenoh-bridge-ros2dds -l udp/0.0.0.0:7447 -d 2 --ros-localhost-only
