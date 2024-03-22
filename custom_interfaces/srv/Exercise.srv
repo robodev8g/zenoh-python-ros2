@@ -1,0 +1,6 @@
+int64 x
+string op
+int64 y
+---
+int64 res
+bool success
